@@ -1,15 +1,26 @@
 * {
     box-sizing: border-box;
 }
-
+/* base designs */
 body {
     font-size: 1.35em;
     margin: 0px;
 }
 
+main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+
 img {
     display: block;
+    /* width: 200px; */
+    height: 200px;
 }
+
 
 .header-container {
     background-color: #FAFAFA;
@@ -42,11 +53,22 @@ img {
     padding: 10px;
 }
 
+.portofolio-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.portofolio-card-image{
+    width: 90%;
+    height: 250px;
+    min-width: 250px;
+    max-width: 450px;
+}
+.contact-container{
 
-
-
-
+    text-align:center;
+}
 
 /* tableta */
 @media (min-width:768px) {
@@ -84,6 +106,26 @@ img {
         /* border: 2px solid rgb(16, 196, 127); */
         margin-top: 0%;
     }
+
+    .portofolio-cards-container{
+
+        border: 2px solid red;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: ;
+    }
+
+    .portofolio-card{
+        
+        border: 2px solid red;
+
+        width: 40%;
+    }
 }
 
 /*  [c*/
@@ -102,6 +144,25 @@ img {
         width: 60%;
         margin-left: auto;
         /* border: 2px solid rgb(204, 12, 124); */
+    }
+/* cards */
+    .portofolio-cards-container{
+
+        border: 2px solid red;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .portofolio-card{
+        
+        border: 2px solid red;
+
+        width: 30%;
     }
 
 }
